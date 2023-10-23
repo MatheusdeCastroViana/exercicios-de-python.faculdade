@@ -13,19 +13,18 @@ Multiplicação = Digite 4\n"""))
 if operacao < 0 or operacao > 5:
     print("""Opção inválida :( 
 Escolha uma das opções existentes.""")
-elif n1 < 1 or n2 < 1:
-    if operacao == 3:
-        print("\nNão se pode dividir nenhum número por 0 :(\n")
-    elif operacao == 1:
-        resultado = n1 + n2
-        print(f"\nO seu resultado é: {resultado}\n")
-    elif operacao == 2:
-        resultado = n1 - n2
-        print(f"\nO seu resultado é: {resultado}\n")
-    elif operacao == 4:
-        resultado = n1 * n2
-        print(f"\nO seu resultado é: {resultado}\n")
-else: 
-    if operacao == 3:
+elif operacao == 1:
+    resultado = n1 + n2
+    print(f"O resultado é: {resultado}")
+elif operacao == 2:
+    resultado = n1 - n2
+    print(f"O resultado é: {resultado}")    
+elif operacao == 3:
+    if n2 < 1:
+        print("Não se pode dividir nenhum número por zero!")
+    else:
         resultado = n1 / n2
-        print(f"\nO seu resultado é: {resultado}\n")
+        print(f"O resultado é: {resultado}")
+else:
+    resultado = n1 * n2
+    print(f"O resultado é: {resultado}")
