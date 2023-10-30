@@ -12,7 +12,7 @@ Divisão = Digite 3
 Multiplicação = Digite 4\n"""))
 
 match operacao:
-    case 1:
+    case 1: 
         resultado = n1 + n2
         print(f"O resultado é: {resultado}")
     case 2:
